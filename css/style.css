@@ -1,0 +1,656 @@
+/* ==========COMMON CSS START========== */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,li {
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+#background{
+    background: url(../images/body\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: 117px;
+}
+  /* ==========COMMON CSS END========== */
+
+
+
+/* ==========NAVBAR CSS START========== */
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 37px;
+}
+.nav-btn button{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #FFFFFF;
+    background: #FF3A44;
+    border-radius: 50px;
+    padding: 13px 25px;
+    border: none;
+    transition: all linear 0.4s;
+}
+.nav-btn button:hover{
+    transform: translateY(-10px);
+}
+.navbar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.nav-item a{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #333333;
+    position: relative;
+}
+.nav-item a::after{
+    content: '';
+    position: absolute;
+    top: -31px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #0B4C61;
+    border-radius: 0px 0px 20px 20px;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+.nav-item a:hover::after{
+    opacity: 1;
+    height: 8px;
+}
+.toggle-bar i{
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: #0C5F79;
+    z-index: 999;
+}
+.sidebar ul{
+    text-align: center;
+    margin-top: 100px;
+}
+.sidebar ul li a{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.cross-bar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #FFFFFF;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+.nav-scroll{
+    background: #f2f2f2;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999 !important;
+    animation: animator 1s;
+}
+@keyframes animator {
+    from{
+        top: -200px;
+    }
+    to{
+        top: 0;
+    }
+}
+
+
+/* ==========NAVBAR CSS END========== */
+
+
+/* ==========BANNER CSS START========== */
+
+#banner{
+    padding-top: 84px;
+    padding-bottom: 107px;
+}
+.banner-details h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: capitalize;
+    color: #222222;
+    padding-top: 100px;
+}
+.banner-details p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: #888888;
+    width: 420px;
+    padding-top: 20px;
+}
+.banner-details .nav-btn{
+    padding-top: 43px;
+}
+.banner-img{
+    position: relative;
+    z-index: 1;
+}
+.banner-shape1{
+    position: absolute;
+    top: 0;
+    right: -80px;
+    z-index: -1;
+}
+.banner-shape2{
+    position: absolute;
+    bottom: -46px;
+    left: -80px;
+    z-index: -1;
+}
+.banner-playbtn{
+
+    border-radius: 50%;
+    background: rgba(255, 189, 47, 0.3);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-playbtn button {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 113px;
+    height: 113px;
+    background: #FFBD2F;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+  }
+  .banner-playbtn button i {
+    font-size: 33px;
+    color: #fff;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .banner-playbtn button::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 189, 47, 0.795);
+    border-radius: 50%;
+    z-index: 1;
+    animation: animation 2s infinite;
+  }
+  @keyframes animation {
+    0% {
+      transform: scale(1);
+      opacity: .9;
+      z-index: 1;
+    }
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+      z-index: 1;
+    }
+  }
+/* ==========BANNER CSS END========== */
+
+
+
+
+/* ==========SERVICE CSS START========== */
+
+
+#service{
+    padding-bottom: 85px;
+}
+.common-title h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding-bottom: 19px;
+    width: 770px;
+    margin: 0 auto;
+}
+.common-title p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #D8D8D8;
+    width: 530px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+}
+.service-item{
+    padding-top: 45px;
+    padding-bottom: 90px;
+    background: #FF3A44;
+    border-radius: 20px;
+    width: 300px;
+}
+.service-item2{
+    padding-top: 45px;
+    padding-bottom: 90px;
+    background: #FFBD2F;
+    border-radius: 20px;
+    width: 300px;
+}
+.service-item3{
+    padding-top: 45px;
+    padding-bottom: 90px;
+    background: #0489CA;
+    border-radius: 20px;
+    width: 300px;
+}
+.service-icon{
+    background: #0B4C61;
+    border-radius: 12px;
+    width: 80px;
+    height: 80px;
+    color: #ffffff;
+    font-size: 32px;
+    line-height: 80px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 17px;
+}
+.service-icon::after{
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 76, 97, 0.3);
+    border-radius: 12px;
+    z-index: -1;
+}
+.service-item-details h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 250px;
+    padding-bottom: 11px;
+    margin: 0 auto;
+}
+.service-item-details p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 269px;
+    margin: 0 auto;
+}
+.service-shape1 {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    z-index: -1;
+}
+.service-shape2 {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: -1;
+}
+.s-shapes {
+    position: relative;
+    z-index: 90;
+}
+/* ==========SERVICE CSS END========== */
+
+
+/* ==========TOOLS CSS START========== */
+.tools-details-heading span{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 50px;
+    color: #FFBD2F;
+    margin-right: 20px;
+}
+.tools-details-heading h3{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    width: 185px;
+    padding-bottom: 15px;
+}
+.tools-details p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    width: 249px;
+    color: #D8D8D8;
+    margin-left: 60px;
+}
+.pol-part{
+    padding-top: 90px;
+}
+.caption-headding span{
+    width: 25px;
+    height: 25px;
+    background: #0489CA;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+.caption-headding h4{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+.caption-details{
+    padding: 15px 50px 22px 25px;
+    background: #0C5F79;
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+.caption-details p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #D0D0D0;
+    width: 340px;
+    margin-left: 35px;
+    padding-top: 11px;
+}
+.caption .two{
+    background: #FFBD2F;
+}
+.caption .three{
+   background: #FF3A44;
+}
+.pol-banner {
+    position: relative;
+    z-index: 998;
+}
+.pol-banner-shape {
+    position: absolute;
+    top: 140px;
+    right: -175px;
+    z-index: -1;
+}
+
+/* ==========TOOLS CSS END========== */
+
+
+
+/* ==========COMPLIMENTS CSS START========== */
+
+
+#compliments{
+    padding-bottom: 100px;
+}
+#compliments .common-title h3{
+    width: 504px;
+    padding-top: 70px;
+}
+.compliments-details p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #C6C6C6;
+    padding-bottom: 25px;
+    width: 482px;
+}
+.compliments-details h4{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+.compliments-details h4 span{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 22px;
+    color: #C6C6C6;
+    display: block;
+    padding-top: 15px;
+}
+.compliments-details{
+    position: relative;
+}
+.compliments-details img {
+    position: absolute;
+    top: -125px;
+    left: -50px;
+}
+
+
+
+
+.slick-dots {
+    position: absolute;
+    bottom: 100px;
+    right: 470px;
+}
+    
+.slick-dots li{
+    display: inline-block;
+    margin-right: 10px;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: #0D6785;
+}
+.slick-dots li button{
+    color: transparent;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0;
+}
+.slick-dots li.slick-active button{
+    opacity: 1;
+    background: #FFBD2F;
+}
+
+/* ==========COMPLIMENTS CSS END========== */
+
+
+/* ==========TEAM CSS START========== */
+
+.team-bg{
+    padding-top: 85px;
+    padding-bottom: 75px;
+    background: #0C5F79;
+    border-radius: 45px;
+    margin-bottom: 80px;
+}
+.team-details-left h2{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+    padding-bottom: 30px;
+}
+.team-details-right p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-top: 16px;
+}
+
+
+/* ==========TEAM CSS END========== */
+
+
+/* ==========FOOTER CSS END========== */
+footer{
+    padding: 50px 0;
+    position: relative;
+}
+footer::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #196781;
+}
+footer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #196781;
+}
+.footer-item p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #E6E6E6;
+}
+.footer-item-headding{
+    padding-bottom: 30px;
+}
+.footer-item-headding h3{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding-top: 12px;
+}
+.footer-item p span{
+    display: block;
+    padding-top: 20px;
+}
+.footer-item ul {
+    padding-top: 20px;
+    padding-left: 0;
+}
+.footer-item ul li{
+    padding-right: 18px;
+}
+.footer-item ul li a{
+    width: 45px;
+    height: 45px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 50%;
+    color: #222222;
+    line-height: 45px;
+    font-size: 20px;
+    transition: all linear 0.4s;
+}
+.footer-item ul li a:hover{
+    transform: scale(1.2);
+}
+.footer-bottom p{
+    padding-top: 28px;
+    padding-bottom: 30px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #E6E6E6;
+}
+.footer-bottom{
+    position: relative;
+}
+.footer-bottom img {
+    position: absolute;
+    top: -106px;
+    right: -125px;
+}
+/* ==========FOOTER CSS END========== */
+
+
+
+/* ==========GO TO TOP CSS PART START========== */
+
+.go-to-top{
+    width: 50px;
+    height: 50px;
+    background: #FF3A44;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 999;
+    display: none;
+}
+
+/* ==========GO TO TOP CSS PART END========== */
